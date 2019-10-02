@@ -27,5 +27,8 @@ public class Main {
         }
 
         System.out.println("합 = " + sum);
+        
+        sc.close();
     }
+    
 }

@@ -19,5 +19,7 @@ public class Main {
         }
 
         System.out.println("평균 = " + (double)sum / cnt);
+        
+        sc.close();
     }
 }
