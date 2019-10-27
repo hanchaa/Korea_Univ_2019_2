@@ -18,18 +18,13 @@ public class Circle {
     }
 
     public static void main(String[] args) {
-        Circle pizza, donut;
-        pizza = new Circle();
-        donut = new Circle();
-
-        pizza.name = "피자";
-        pizza.radius = 10;
-        double pizzaarea = pizza.getArea();
-        System.out.println(pizza.name + "의 면적: " + pizzaarea);
-
+        Circle donut = new Circle();
         donut.name = "도넛";
-        donut.radius = 2;
-        double donutarea = donut.getArea();
-        System.out.println(donut.name + "의 면적: " + donutarea);
+        double area = donut.getArea();
+        System.out.println(donut.name + "의 면적: " + area);
+        
+        Circle pizza = new Circle(10, "피자");
+        area = pizza.getArea();
+        System.out.println(pizza.name + "의 면적: " + area);
     }
 }
