@@ -39,5 +39,7 @@ public class Test1_1 {
 
             cnt++;
         }
+        
+        sc.close();
     }
 }
