@@ -17,7 +17,7 @@ class Gen<T, K> {
     public void setItem(T n, K s) {
         name = n;
         score = s;
-        list.put(n, s);
+        list.put(name, score);
     }
 
     public K findItem(T n) {
@@ -26,7 +26,7 @@ class Gen<T, K> {
 }
 
 public class Assign {
-    static void init(Gen tmp) {
+    static void init(Gen<String, Integer> tmp) {
         String[] name = {"유재석", "강호동", "이경규"};
         int[] score = {70, 90, 80};
 
@@ -46,7 +46,9 @@ public class Assign {
             if (name.equals("quit"))
                 break;
 
-            //System.out.println(a.findItem(name));
+            System.out.println(a.findItem(name));
         }
+        
+        sc.close();
     }
 }
