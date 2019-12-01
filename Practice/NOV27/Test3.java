@@ -25,5 +25,7 @@ public class Test3 {
         }
 
         System.out.println("\n가장 긴 이름: " + a.get(longest));
+        
+        sc.close();
     }
 }

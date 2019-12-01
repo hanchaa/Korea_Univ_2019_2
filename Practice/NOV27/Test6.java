@@ -33,5 +33,7 @@ public class Test6 {
             else
                 System.out.println(value);
         }
+        
+        sc.close();
     }
 }
