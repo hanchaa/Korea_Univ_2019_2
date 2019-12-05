@@ -14,7 +14,7 @@ public class Test1 {
 
         if (choice == 1) {
             try {
-                BufferedWriter bw = new BufferedWriter(new FileWriter("C:\\홍길동.txt"));
+                BufferedWriter bw = new BufferedWriter(new FileWriter("홍길동.txt"));
 
                 System.out.print("데이터 입력>> ");
                 String str = sc.nextLine();
@@ -29,7 +29,7 @@ public class Test1 {
             }
         } else if (choice == 2) {
             try {
-                BufferedReader br = new BufferedReader(new FileReader("C:\\홍길동.txt"));
+                BufferedReader br = new BufferedReader(new FileReader("홍길동.txt"));
 
                 System.out.println("데이터 출력>> " + br.readLine());
 
@@ -39,8 +39,8 @@ public class Test1 {
             }
         } else if (choice == 3) {
             try {
-                BufferedReader br = new BufferedReader(new FileReader("C:\\홍길동.txt"));
-                BufferedWriter bw = new BufferedWriter(new FileWriter("C:\\홍길동2.txt"));
+                BufferedReader br = new BufferedReader(new FileReader("홍길동.txt"));
+                BufferedWriter bw = new BufferedWriter(new FileWriter("홍길동2.txt"));
 
                 String str;
                 while ((str = br.readLine()) != null)
