@@ -4,7 +4,7 @@ import java.io.*;
 
 public class Test4 {
     public static void main(String[] args) throws IOException {
-        FileInputStream file = new FileInputStream(".\\src\\Practice\\DEC04\\japan.txt");
+        FileInputStream file = new FileInputStream("japan.txt");
         BufferedReader in = new BufferedReader(new InputStreamReader(file, "UTF-16"));
 
         String str;

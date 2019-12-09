@@ -9,7 +9,6 @@ public class Test7 {
     public static void main(String[] args) {
         File src = new File("C:\\Windows\\Web\\4K\\Wallpaper\\Windows\\img0_2560x1600.jpg");
         File dest = new File("copyimg.jpg");
-        int c;
 
         try{
             FileInputStream fi = new FileInputStream(src);

@@ -2,7 +2,6 @@ package Practice.DEC04;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 
 public class Test2 {
@@ -10,7 +9,7 @@ public class Test2 {
         FileInputStream fin = null;
         InputStreamReader in = null;
         try {
-            fin = new FileInputStream(".\\src\\Practice\\DEC04\\test2.txt");
+            fin = new FileInputStream("test2.txt");
             in = new InputStreamReader(fin, "MS949");
 
             System.out.println("인코딩 문자 집합: " + in.getEncoding());

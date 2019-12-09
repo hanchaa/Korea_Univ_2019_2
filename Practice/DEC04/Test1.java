@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Test1 {
     public static void main(String[] args) {
-        try (Scanner sc = new Scanner(System.in); FileWriter fout = new FileWriter(".\\src\\Practice\\DEC04\\test1.txt")) {
+        try (Scanner sc = new Scanner(System.in); FileWriter fout = new FileWriter("test1.txt")) {
             while (true) {
                 System.out.print("입력>> ");
                 String name = sc.nextLine();
