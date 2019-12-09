@@ -11,9 +11,8 @@ public class Test1 {
         int choice = sc.nextInt();
 
         sc.nextLine();
-
-        if (choice == 1) {
-            try {
+        try {
+	        if (choice == 1) {
                 BufferedWriter bw = new BufferedWriter(new FileWriter("홍길동.txt"));
 
                 System.out.print("데이터 입력>> ");
@@ -24,21 +23,13 @@ public class Test1 {
                 System.out.println("파일로 저장됨!");
 
                 bw.close();
-            } catch (IOException e) {
-                System.out.println(e.getMessage());
-            }
-        } else if (choice == 2) {
-            try {
+	        } else if (choice == 2) {
                 BufferedReader br = new BufferedReader(new FileReader("홍길동.txt"));
 
                 System.out.println("데이터 출력>> " + br.readLine());
 
                 br.close();
-            } catch (IOException e) {
-                System.out.println(e.getMessage());
-            }
-        } else if (choice == 3) {
-            try {
+	        } else if (choice == 3) {
                 BufferedReader br = new BufferedReader(new FileReader("홍길동.txt"));
                 BufferedWriter bw = new BufferedWriter(new FileWriter("홍길동2.txt"));
 
@@ -51,9 +42,10 @@ public class Test1 {
 
                 br.close();
                 bw.close();
-            } catch (IOException e) {
-                System.out.println(e.getMessage());
-            }
+	        }
+        } catch(IOException e) {
+        	System.out.println(e.getMessage());
         }
+        sc.close();
     }
 }
